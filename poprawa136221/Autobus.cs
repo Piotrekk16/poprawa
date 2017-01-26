@@ -10,7 +10,7 @@ namespace poprawa136221
     {
         private int liczbaMiejsc;
 
-        public Autobus(string marka_,string model,double cena,int miejsca)
+        public Autobus(string marka_,string model,double cena,int miejsca) : base (marka_, model, cena)
         {
             this.cenaZaDzien = cena;
             this.liczbaMiejsc = miejsca;
