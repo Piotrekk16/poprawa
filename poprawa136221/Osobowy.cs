@@ -11,7 +11,7 @@ namespace poprawa136221
         private bool klimatyzacja;
         private bool kombi;
 
-        public Osobowy(string marka_, string model_, double cena_,bool klima_,bool kombi_)
+        public Osobowy(string marka_, string model_, double cena_,bool klima_,bool kombi_) : base (marka_, model_, cena_)
         {
             this.marka = marka_;
             this.cenaZaDzien = cena_;
