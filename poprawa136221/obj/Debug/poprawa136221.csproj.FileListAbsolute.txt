@@ -1,0 +1,2 @@
+C:\Users\local\Desktop\poprawa136221\poprawa136221\bin\Debug\poprawa136221.exe.config
+C:\Users\local\Desktop\poprawa136221\poprawa136221\obj\Debug\poprawa136221.csprojResolveAssemblyReference.cache
