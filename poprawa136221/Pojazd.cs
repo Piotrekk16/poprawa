@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace poprawa136221
 {
-    abstract class Pojazd : IKoszt
+    abstract class Pojazd : IKoszt, IComparable<Pojazd>
     {
         protected string marka;
         protected string model;
@@ -20,6 +20,11 @@ namespace poprawa136221
         }
 
         abstract public double ObliczKoszt(int cos);
-   
+
+
+        public int CompareTo(Pojazd other)
+        {
+            return other.model.CompareTo(this.model);
+        }
     }
 }

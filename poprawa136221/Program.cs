@@ -35,6 +35,32 @@ namespace poprawa136221
             {
                 Console.WriteLine(pojazdy[i].ObliczKoszt(7));
             }
+            
+            
+            //kod z polecenie 7
+            Wypozyczalnia w1 = new Wypozyczalnia(23, 45);
+            Wypozyczalnia w2 = new Wypozyczalnia(3424, 23332);
+            Wypozyczalnia w3 = new Wypozyczalnia(11, 323);
+            Console.WriteLine(w1.ObliczKoszt(34));
+            Console.WriteLine(w2.ObliczKoszt(34));
+            Console.WriteLine(w3.ObliczKoszt(34));
+            
+
+            //kod z polecenia 9
+            pojazdy.Sort();
+            foreach(var element in pojazdy)
+            {
+                Console.WriteLine(element.ToString());
+            }
+
+            //kod z polecenia 10
+            Stack<Pojazd> pojazdy2 = new Stack<Pojazd>(pojazdy);
+            foreach (var element in pojazdy2)
+            {
+                Console.WriteLine(element.ToString());
+            }
+
+            Console.ReadKey();
         }
     }
 }

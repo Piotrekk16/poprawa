@@ -10,29 +10,27 @@ namespace poprawa136221
     {
         private int liczbaMiejsc;
 
-        public Autobus(string marka_,string model,double cena,int miejsca) : base (marka_, model, cena)
+        public Autobus(string marka_,string model,double cena,int miejsca)
+            :base(marka_,model,cena)
         {
-            this.cenaZaDzien = cena;
-            this.liczbaMiejsc = miejsca;
-            this.marka = marka_;
             this.model = model;
         }
 
         public override string ToString()
         {
-            return "Autobus,\nmarka: " + marka + ", model: " + model + ", cena za dzien: " + cenaZaDzien + ", ilosc miejsc: " + liczbaMiejsc;
+            return "Autobus,\n marka: " + marka + ", model: " + model + ", cena za dzien: " + cenaZaDzien + ", ilosc miejsc: " + liczbaMiejsc;
         }
         public override double ObliczKoszt(int cos)
         {
             if (liczbaMiejsc > 50)
             {
-                cos *= 100;
+                return cos * 100;
             }
             else
             {
-                cenaZaDzien *= cos;
+                return cenaZaDzien * cos;
             }
-            return 0; 
+            
         }
     }
 }

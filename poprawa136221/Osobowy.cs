@@ -11,11 +11,9 @@ namespace poprawa136221
         private bool klimatyzacja;
         private bool kombi;
 
-        public Osobowy(string marka_, string model_, double cena_,bool klima_,bool kombi_) : base (marka_, model_, cena_)
+        public Osobowy(string marka_, string model_, double cena_,bool klima_,bool kombi_)
+            :base(marka_,model_,cena_)
         {
-            this.marka = marka_;
-            this.cenaZaDzien = cena_;
-            this.model = model_;
             this.klimatyzacja = klima_;
             this.kombi = kombi_;
         }
@@ -33,7 +31,7 @@ namespace poprawa136221
             }
             if (kombi)
             {
-                return 136221 / 100 + cenaZaDzien * cos;
+                return cenaZaDzien * cos;
             }
             else return 500;
         }
